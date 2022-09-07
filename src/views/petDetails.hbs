@@ -1,0 +1,8 @@
+{{#with foundPet}}
+    <h1>{{imgUrl}}, {{name}}</h1>
+    <p>Employed: {{yearsAge}} years</p>
+    <p>{{description}}</p>
+{{/with}}
+<form action="/pets/delete/{{petId}}" method="POST">
+    <button type="submit">Delete Pet</button>
+</form>

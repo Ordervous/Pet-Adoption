@@ -1,0 +1,11 @@
+<h1>Adopt A Pet</h1>
+<ul>
+    {{#each petList}}
+    <li>
+        {{imgUrl}} | {{name}}
+        <a href="/pets/{{petId}}">View Details</a>
+         <a href="/pets/edit/{{petId}}">Edit Details</a>
+    </li>
+    {{/each}}
+</ul>
+<a href="/pets/new">Add New Pet</a>

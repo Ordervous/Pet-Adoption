@@ -1,0 +1,9 @@
+body {
+    padding: 50px;
+    font: 16px "sans-serif", Helvetica, Arial;
+    background-color: rgb(217, 244, 240);
+}
+
+a {
+    color: rgb(133, 230, 91);
+}
