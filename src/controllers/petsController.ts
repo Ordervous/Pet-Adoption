@@ -42,7 +42,7 @@ export const defaultPet: RequestHandler = (req, res, next) => {
         res.render('editPet', { foundPet: petItem });
     }
     else {
-        res.status(404).render('error', { message: 'pet already adopted' });
+        res.status(404).render('error', { message: 'Whoops, you have stepped in some doo doo' });
     }
   }
   

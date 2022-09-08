@@ -1,8 +1,7 @@
 {{#with foundPet}}
-    <h1>{{imgUrl}}, {{name}}</h1>
-    <p>Employed: {{yearsAge}} years</p>
+    <img src={{imgUrl}} width="500px">
+    <h1>{{name}}</h1>
+    <p>{{yearsAge}} years old</p>
     <p>{{description}}</p>
-    <form action="/pets/delete/{{petId}}" method="POST">
-        <button type="submit">Delete Pet</button>
-    </form>
 {{/with}}
+<button onclick="history.back()">Back</button>

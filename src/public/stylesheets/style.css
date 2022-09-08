@@ -1,9 +1,57 @@
 body {
     padding: 50px;
     font: 16px "sans-serif", Helvetica, Arial;
-    background-color: rgb(217, 244, 240);
+    background-color: rgb(235, 243, 178);
 }
 
-a {
-    color: rgb(133, 230, 91);
+.centre {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin: 5px;
+    justify-content: center;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Remove padding */
+    margin: 30;
+    /* Remove margins */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    align-items: center;
+}
+
+button {
+    padding: 8px;
+    border-radius: 8px;
+    background-color: bisque;
+    min-width: 60px;
+}
+
+.view {
+    background-color: #2ebfdf;
+}
+
+.edit {
+    background-color: #e7e7e7;
+}
+
+.delete {
+    background-color: #f44336;
+}
+
+h1 {
+    color: #507e88;
 }

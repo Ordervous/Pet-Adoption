@@ -50,7 +50,7 @@ const editPetPage = (req, res, next) => __awaiter(void 0, void 0, void 0, functi
         res.render('editPet', { foundPet: petItem });
     }
     else {
-        res.status(404).render('error', { message: 'pet already adopted' });
+        res.status(404).render('error', { message: 'Whoops, you have stepped in some doo doo' });
     }
 });
 exports.editPetPage = editPetPage;

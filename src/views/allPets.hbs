@@ -1,11 +1,22 @@
 <h1>Adopt A Pet</h1>
+<a href="/pets/new">Add New Pet</a>
 <ul>
+    <br>
     {{#each petList}}
     <li>
-        {{imgUrl}} | {{name}}
-        <a href="/pets/{{petId}}">View Details</a>
-         <a href="/pets/edit/{{petId}}">Edit Details</a>
+        <img src={{imgUrl}} width="250px">
+        <div class="centre">
+            <h3>{{name}}</h3>
+            <form action="/pets/{{petId}}" method="GET">
+                <button type="submit" class="view">View</button>
+            </form>
+            <form action="/pets/edit/{{petId}}" method="GET">
+                <button type="submit" class="edit">Edit</button>
+            </form>
+            <form action="/pets/delete/{{petId}}" method="POST">
+                <button type="submit" class="delete">Delete</button>
+            </form>
+        </div>
     </li>
     {{/each}}
 </ul>
-<a href="/pets/new">Add New Pet</a>
