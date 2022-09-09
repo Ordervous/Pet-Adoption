@@ -1,17 +1,17 @@
-<h1>Add New pet</h1>
+<h1>Add New Pet</h1>
 <form action='/pets/new' method="POST">
     <label for="name">Pet Name: </label>
     <input type="text" name="name" placeholder="Enter pet name" /><br>
-
+    <br>
     <label for="imgUrl">imgUrl: </label>
     <input type="text" name="imgUrl" placeholder="Enter image URL" /><br>
-
+    <br>
     <label for="description">Description: </label>
     <input type="text" name="description" placeholder="Enter Description" /><br>
-
+    <br>
     <label for="yearsAge">Pet Age: </label>
     <input type="text" name="yearsAge" placeholder="Pet's age" /><br>
-
+    <br>
     <button type="submit">Add Pet</button>
+    <button onclick="history.back()">Back</button>
 </form>
-<button onclick="history.back()">Back</button>

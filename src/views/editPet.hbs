@@ -1,19 +1,23 @@
 <h1>Edit Pet Listing</h1>
 {{#with foundPet}}
 <form action='/pets/edit/{{petId}}' method="POST">
-    <label for="name">Enter Pet Name: </label>
+    <label for="name">Enter Pets Name: </label>
     <input type="text" name="name" placeholder="Enter Pet Name" value="{{name}}" /><br>
-
-    <label for="imgUrl">Enter Pet Url: </label>
+    <br>
+    <label for="imgUrl">Enter Pet URL: </label>
     <input type="text" name="imgUrl" placeholder="Enter URL" value="{{imgUrl}}" /><br>
-
-    <label for="description">Enter Item Description: </label>
+    <br>
+    <label for="description">Enter Description: </label>
     <input type="text" name="description" placeholder="Enter Description" value="{{description}}" /><br>
-
+    <br>
     <label for="yearsAge">Years old: </label>
     <input type="text" name="yearsAge" placeholder="Enter Age" value="{{yearsAge}}" /><br>
-
+    <br>
     <button type="submit">Edit Pet</button>
+<br>
+<button onclick="history.back()">Back</button>
+</form>
+<form action="/pets/delete/{{petId}}" method="POST">  
+    <button type="submit" class="delete">Delete</button>
 </form>
 {{/with}}
-<button onclick="history.back()">Back</button>
